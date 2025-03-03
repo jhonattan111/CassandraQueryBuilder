@@ -13,10 +13,10 @@ $fullPath = (Join-Path -Path (Get-Location) -ChildPath $reportPath)
 $fileUrl = $fullPath -replace '\\', '/'
 $fileUrl = "file:///" + $fileUrl
 
-Write-Host "Relat�rio gerado em: coveragereport\$guid"
+Write-Host "Relatório gerado em: coveragereport\$guid"
 
 Start-Process $fileUrl
 
 
-Write-Host "Aperte qualquer bot�o para fechar..."
+Write-Host "Aperte qualquer botão para fechar..."
 [System.Console]::ReadKey() | Out-Null

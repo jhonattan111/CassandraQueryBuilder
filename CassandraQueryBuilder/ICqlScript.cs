@@ -3,7 +3,7 @@
     public interface ICqlScript
     {
         string ToScript();
-        ICqlScript Select();
+        ICqlScript Select(List<string> selectedColumns);
         ICqlScript Select<T>();
         ICqlScript From<T>();
         ICqlScript From(string table);
